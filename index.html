@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+
+
+
+    <main id="main">
+
+  
+
+
+
+
+               <!-- Dashboard -->
+        <section class="elements">
+
+              <!-- Navbar -->
+        <nav class="app-header">
+            <div class="header-bg"></div>
+            <div class="header-content">
+                <div class="header-left">
+                    <p class="greeting">Hello, Champion</p>
+                    <div class="location-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="location-name">Detecting location...</span>
+                    </div>
+                </div>
+
+                <div class="header-center">
+                    <div class="weather-card">
+                        <i class="fas fa-cloud-sun"></i>
+                        <div class="weather-meta">
+                            <span class="weather-temp">--</span>
+                            <span class="weather-desc">Loading weather</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <p class="time-label">Local Time</p>
+                    <p class="clock-time">--:--:-- --</p>
+                    <button class="theme-toggle" type="button">
+                        <i class="fas fa-palette"></i>
+                        <span>Theme</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+            <div class="todo  element" id="1">
+
+
+                <img src="https://images.unsplash.com/photo-1650735310415-392ab5378954?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="todo">
+
+                <h2>
+                    Todo List
+                </h2>
+
+            </div>
+
+            <div class="daily element" id="2">
+                <img src="https://plus.unsplash.com/premium_photo-1677347310866-b467f0f00ab5?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="todo">
+                <h2> Daily Schedule</h2>
+            </div>
+
+
+
+
+            <div class="motivation element" id="3">
+                <img src="https://plus.unsplash.com/premium_photo-1671512497719-173938f4d3a4?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="todo">
+                <h2>Motivation</h2>
+            </div>
+
+            <div class="promodoro element" id="4">
+                <img src="https://images.unsplash.com/photo-1699154385853-574aea6aa8cb?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="todo">
+                <h2>Promodoro Timer</h2>
+            </div>
+
+            <div class="dailyGoals element" id="5">
+                <img src="https://images.unsplash.com/photo-1629721671030-a83edbb11211?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="todo">
+                <h2>Daily Goals</h2>
+            </div>
+
+
+
+        </section>
+
+       
+
+     
+
+
+
+
+        <!-- Todo List Page -->
+        <section class="fullElement todoListPage">
+            <button class="back"><i class="fas fa-times"></i></button>
+            <h2>Your Personalised Todo List</h2>
+
+
+            <div class="todo-container">
+                <!-- Add Task -->
+                <div class="addTask">
+
+                    <form>
+
+                        <input type="text" placeholder="Add a new task" class="taskInput">
+                        <textarea name="description" id="taskDescription" placeholder="Add a description"></textarea>
+
+
+                        <div class="mark-important">
+                            <input type="checkbox" id="important" name="important">
+                            <label for="important">Mark as Important</label>
+                        </div>
+                        <button type="submit">Add A Task</button>
+
+
+
+
+                    </form>
+
+
+                </div>
+
+
+                <!-- All Task show -->
+                <div class="allTask">
+                  
+
+                    <div class="empty">
+                        <h3>No tasks added yet!</h3>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Start adding tasks to stay organized and productive.</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </section>
+
+        <section class="fullElement dailySchedulePage">
+            <button class="back"><i class="fas fa-times"></i></button>
+
+            <h2>Plan Your Day To be More Productive <span class="selected-date">Today</span></h2>
+            
+            <div class="date-picker">
+                <label for="plannerDate">Select date</label>
+                <input type="date" id="plannerDate">
+            </div>
+
+
+
+
+
+            <div class="day-planner">
+                <!-- <div class="day-planner-time">
+                    <div class="time-range">
+                        <span class="start">06:00</span>
+                        <span class="dash">-</span>
+                        <span class="end">07:00</span>
+                    </div>
+                    <input type="text" placeholder="Morning Exercise">
+                </div> -->
+            </div>
+
+
+
+
+
+        </section>
+
+        <section class="fullElement motivationPage">
+            <button class="back"><i class="fas fa-times"></i></button>
+            <div class="motivation-shell">
+                <div class="motivation-hero">
+                    <p class="eyebrow">Daily Spark</p>
+                    <h1>Motivational Quote</h1>
+                    <p class="sub">Reset your focus and take one bold step forward today.</p>
+                </div>
+
+                <div class="quote-card">
+                    <p class="quote">“Success is the sum of small efforts repeated day in and day out.”</p>
+                    <div class="quote-meta">
+                        <span class="author">— Robert Collier</span>
+                        <div class="pill-group">
+                            <span class="pill">Focus</span>
+                            <span class="pill">Consistency</span>
+                            <span class="pill">Momentum</span>
+                        </div>
+                    </div>
+                    <button class="refresh-quote">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>New Quote</span>
+                    </button>
+                </div>
+
+                <div class="motivation-grid">
+                    <div class="motivation-card">
+                        <h3>Today’s Intention</h3>
+                        <p>Pick one task that moves your goals forward and start with 15 minutes.</p>
+                    </div>
+                    <div class="motivation-card">
+                        <h3>Focus Cue</h3>
+                        <p>Silence notifications for one hour. Deep work compounds fast.</p>
+                    </div>
+                    <div class="motivation-card">
+                        <h3>Reflection</h3>
+                        <p>Write down one win you want to earn before the day ends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="fullElement promodoroPage">
+            <button class="back"><i class="fas fa-times"></i></button>
+            <div class="pomodoro-shell">
+                <div class="pomodoro-hero">
+                    <p class="eyebrow">Deep Focus</p>
+                    <h1>Pomodoro Time</h1>
+                    <p class="sub">Work in focused sprints and recharge with intention.</p>
+                </div>
+
+                <div class="pomodoro-timer-card">
+                    <div class="timer-ring">
+                        <div class="timer-display">
+                            <span class="time">25:00</span>
+                            <span class="label">Focus Session</span>
+                        </div>
+                    </div>
+                    <div class="timer-controls">
+                        <button class="timer-btn primary start">
+                            <i class="fas fa-play"></i>
+                            <span>Start</span>
+                        </button>
+                        <button class="timer-btn ghost pause">
+                            <i class="fas fa-pause"></i>
+                            <span>Pause</span>
+                        </button>
+                        <button class="timer-btn ghost reset">
+                            <i class="fas fa-undo"></i>
+                            <span>Reset</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="pomodoro-grid">
+                    <div class="pomodoro-card">
+                        <h3>Focus</h3>
+                        <p>25 minutes of deep work. Block distractions and ship one thing.</p>
+                    </div>
+                    <div class="pomodoro-card">
+                        <h3>Short Break</h3>
+                        <p>5 minutes to breathe, stretch, or hydrate before the next sprint.</p>
+                    </div>
+                    <div class="pomodoro-card">
+                        <h3>Long Break</h3>
+                        <p>After four rounds, take 15 minutes to fully reset.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="fullElement dailyGoalsPage">
+            <button class="back"><i class="fas fa-times"></i></button>
+            <div class="goals-shell">
+                <div class="goals-hero">
+                    <p class="eyebrow">Daily Intentions</p>
+                    <h1>Daily Goals</h1>
+                    <p class="sub">Set clear targets, track progress, and close the day with a win.</p>
+                </div>
+
+                <div class="goals-layout">
+                    <div class="goals-form">
+                        <h2>Create A Goal</h2>
+                        <form class="goal-form">
+                            <input type="text" class="goal-title" placeholder="Goal title">
+                            <textarea class="goal-notes" placeholder="Why this matters / next steps"></textarea>
+                            <div class="goal-meta">
+                                <label class="priority">
+                                    <span>Priority</span>
+                                    <select class="goal-priority">
+                                        <option value="high">High</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="low">Low</option>
+                                    </select>
+                                </label>
+                                <label class="due">
+                                    <span>Target</span>
+                                    <input type="time" class="goal-time">
+                                </label>
+                            </div>
+                            <button type="submit" class="goal-add">Add Goal</button>
+                        </form>
+                    </div>
+
+                    <div class="goals-board">
+                        <div class="goals-head">
+                            <h2>Today’s Goals</h2>
+                            <div class="goals-count">
+                                <span class="count">0</span>
+                                <span class="label">Active</span>
+                            </div>
+                        </div>
+                        <div class="goals-list">
+                            <div class="goals-empty">
+                                <h3>No goals yet</h3>
+                                <p>Add one goal to start building momentum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
